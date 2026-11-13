@@ -3,7 +3,7 @@ import './index.css'
 
 export default function PostList({ post }) {
     return(
-        <div className='postlist'>
+        <div className='postlist' container>
             {post.map((post) => (
                 <div className='single-post' key={post.id}>
                     <h1>{post.title}</h1>

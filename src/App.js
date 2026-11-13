@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar/index';
 import PostList from './components/PostList/index';
+import PostForm from './components/PostForm/index';
 import Modal from './components/Modal';
 
 export default function App() {
@@ -21,9 +22,9 @@ export default function App() {
     <Navbar setShowModal={setShowModal}/>
 
     <PostList post={posts}/>
-    {showModal && <Modal>
-    <h1>Terms and Conditions</h1>
-    <button onClick={() => setShowModal(false)}>close</button>
+    {showModal && <Modal setShowModal={setShowModal}>
+    <PostForm/> 
+   
     </Modal>}
     </>
   

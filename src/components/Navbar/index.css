@@ -1,18 +1,13 @@
 nav {
-    background-color: yellow;
+  background-color: gray;
     padding: 10px;
-}
+      
+} 
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 .container ul {
-    display: flex;
+     display: flex;
 }
 
 .container ul li {
